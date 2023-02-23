@@ -13,7 +13,7 @@ const About = () => {
                 <p className='py-2 text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quis architecto debitis praesentium dicta, atque quas dolore reiciendis repudiandae placeat dolor recusandae adipisci consectetur quod harum quia eligendi ipsam ad!</p>
             </div>
             <div className='w-fit h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center hover:scale-105 ease-in duration-300 p-4'>
-            <Image className='rounded-xl' src="/../public/assets/ishaq.jpg" alt="/" width="300" height="150"/>             
+            <Image className='rounded-xl' src="/assets/ishaq.jpg" alt="/" width="300" height="150"/>             
             </div>
         </div>
     </div>
