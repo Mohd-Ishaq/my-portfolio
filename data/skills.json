@@ -1,0 +1,8 @@
+[{
+    "languages":
+        [{
+            "skills":"python","image":"/../public/skills/python.png","level":90     
+
+        },{"skills":"javascript","image":"/../public/skills/javascript.png","level":30}
+    ]
+}]
