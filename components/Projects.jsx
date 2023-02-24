@@ -20,7 +20,7 @@
             // description="Created REST API's using FASTAPI framework.it has the functionality of simple social media app where user can sign up or login and post images."
             gitHubLink="https://github.com/Mohd-Ishaq/FastApi"
             liveLink="https://social-media-app-zwdw.onrender.com/docs"
-            moreInfo="/"
+            moreInfo="/project"
             />
 
             <ProjectItem 

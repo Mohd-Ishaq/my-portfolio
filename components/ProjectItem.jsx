@@ -20,31 +20,41 @@ const ProjectItem = ({
   moreInfo,
 }) => {
   return (
-    <div className="flex relative items-center justify-center rounded-xl p-4 shadow-xl w-full h-auto group hover:bg-gradient-to-r from-red-800 to-red-900 overflow-hidden">
+    <div className="group">
+      <div className="flex relative items-center justify-center rounded-xl p-4 shadow-xl w-full h-auto overflow-hidden">
+      <div className="relative"> 
       <Image
-        className="rounded-xl group-hover:opacity-10"
+        className="rounded-xl"
         src={projectImg}
         alt="/"
       />
-      <div className="hidden group-hover:block absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+      <div className="hidden group-hover:block z-10">
+      <div className="bg-black absolute opacity-50 h-full w-full top-0 left-0 rounded-xl" />
+        <div className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
         <h3 className="text-2xl tracking-wider text-white text-center">
           {title}
         </h3>
         <div className="overflow-hidden">
         <p className="text-white py-2 text-sm text-center">{description}</p>
         </div>
-        <div className="flex items-center justify-between py-6">
+        <div className="flex items-center justify-evenly py-6">
             <Link className="rounded-full p-2 bg-white" target="_blank" href={gitHubLink}>
                 <FaGithub />
             </Link>
             <Link className="rounded-full p-2 bg-white" target="_blank" href={liveLink}>
                 <ImEarth />
             </Link>
-            <Link className="rounded-full p-2 bg-white" target="_blank" href={moreInfo}>
+            <Link className="rounded-full p-2 bg-white"  href={moreInfo}>
                 <AiOutlineInfoCircle />
             </Link>
         </div>
+        </div>
+        
       </div>
+    </div>
+
+      </div>
+
     </div>
   );
 };
