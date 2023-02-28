@@ -4,6 +4,7 @@ import Link from 'next/link'
 import simpleApi from "../public/projects/simple1.png"
 import jobApi  from "../public/projects/job1.png"
 import {RiRadioButtonFill} from "react-icons/ri"
+import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa'
 
 const project = () => {
   return (
@@ -11,15 +12,15 @@ const project = () => {
       <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10' />
           <Image className='absolute z-1' fill object-fit="cover" src={simpleApi} alt="/" />
-          <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 font-mono'>
-            <h2 className='py-2'>SIMPLE SOCIAL API</h2>
-            <h3>A REST API</h3>
+          <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
+            <h2 className='p-2 uppercase tracking-wider font-semibold'>SIMPLE SOCIAL</h2>
+            <p className='px-2'>A REST API for simple social medial app</p>
           </div>
       </div>
-      <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
+      <div className='max-w-[1240px] m-auto p-2 grid md:grid-cols-5 gap-2 pt-4'>
         <div className='col-span-4'>
-          <h2 className='py-2'>Overview</h2>
-          <p className='py-2'>Created REST API's using FASTAPI framework.it has the functionality of simple social media app where user can sign up or login and post images.Used FAST API to which is asyncronous framework of python.</p>
+          <h2 className='text-lg font-semibold'>Overview</h2>
+          <p className='pt-4'>In the digital age, social media platforms have become an essential part of our daily lives, connecting people from all over the world and facilitating communication and sharing of ideas. To build a social media app, developers need to create an API that can handle various user actions, such as creating an account, posting content, liking posts, and viewing other users' posts. This essay will describe the features of a REST API that could be used to build a simple social media app.</p>
           <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>Demo</button>
           <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>Code</button>
           {/* <button className='px-8 py-2 mt-4 mr-8'>class</button> */}
@@ -52,7 +53,10 @@ const project = () => {
           </div>
         </div>
       </div>
-        {/* <Link href="/#">back</Link> */}
+        {/* <Link className='pl-10 gap-4 py-20' href="/#projects" scroll={false}> */}
+          {/* <FaChevronCircleLeft className='' size={40}/> */}
+          {/* <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>back</button> */}
+        {/* </Link> */}
     </div>
   )
 }

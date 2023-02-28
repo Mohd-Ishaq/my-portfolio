@@ -21,7 +21,7 @@ const ProjectItem = ({
 }) => {
   return (
     <div className="group">
-      <div className="flex relative items-center justify-center rounded-xl p-4 shadow-xl w-full h-auto overflow-hidden">
+      <div className="flex relative items-center justify-center rounded-xl pt-2 shadow-xl w-full h-auto overflow-hidden">
       <div className="relative"> 
       <Image
         className="rounded-xl"
@@ -30,25 +30,23 @@ const ProjectItem = ({
       />
       <div className="hidden group-hover:block z-10">
       <div className="bg-black absolute opacity-50 h-full w-full top-0 left-0 rounded-xl" />
-        <div className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h3 className="text-2xl tracking-wider text-white text-center">
-          {title}
-        </h3>
-        <div className="overflow-hidden">
-        <p className="text-white py-2 text-sm text-center">{description}</p>
-        </div>
-        <div className="flex items-center justify-evenly py-6">
-            <Link className="rounded-full p-2 bg-white" target="_blank" href={gitHubLink}>
+      <div className='absolute left-5 bottom-5 text-white'>
+                    <p className='text-l font-semibold tracking-wider'>{title}</p>
+                    <p className='text-sm mt-2 max-h-[60%] overflow-hidden'>{description}</p>
+                </div>
+        
+        <div className="absolute top-[2%] right-0 flex items-center justify-end p-2">
+            <Link  data-te-toggle="tooltip-default" data-te-placement="bottom" title="git" target="_blank" rel="noopener noreferrer" className="text-white mx-2 hover:text-black"  href={gitHubLink}>
                 <FaGithub />
             </Link>
-            <Link className="rounded-full p-2 bg-white" target="_blank" href={liveLink}>
+            <Link target="_blank" rel="noopener noreferrer" className="text-white mx-2 hover:text-black" href={liveLink}>
                 <ImEarth />
             </Link>
-            <Link className="rounded-full p-2 bg-white"  href={moreInfo}>
+            <Link className="text-white mx-2 hover:text-black"  href={moreInfo}>
                 <AiOutlineInfoCircle />
             </Link>
         </div>
-        </div>
+        
         
       </div>
     </div>

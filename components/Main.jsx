@@ -10,7 +10,7 @@ const Main=()=>{
             <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
                 <div>
                     {/* <p className="uppercase text-sm tracking-widest text-gray-600">Let's build something together</p> */}
-                    <h1 className="py-4 text-gray-700">Hi, I'm <span className="text-[#7b2424]">Mohammed Ishaq</span></h1>
+                    <h1 className="py-4 text-gray-700">Hi, I'm <span className="text-[#0080ff]">Mohammed Ishaq</span></h1>
                     <h4 className=" text-gray-700">A Back-end Developer</h4>
                     <p className="py-4 text-gray-600 max-w-[70%] m-auto">I'm a back-end developer specializing in builing REST Api's Using Python and Javascript with ORM.Currently working as a junior software developer,focusing on learning new back-end frameworks and building real time projects to improve my skills.</p>
                     <div className="flex items-center justify-between max-w-[330px] m-auto py-4">

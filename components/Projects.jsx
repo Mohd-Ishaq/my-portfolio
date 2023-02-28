@@ -8,7 +8,7 @@
    return (
      <div id="projects" className='w-full'>
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
-          <p className='uppercase text-xl tracking-widest text-[#7b2424]'>
+          <p className='uppercase text-xl tracking-widest text-[#0080ff]'>
             Projects
           </p>
           <h2 className='py-4'>What I've Built</h2>

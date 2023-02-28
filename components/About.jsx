@@ -6,7 +6,7 @@ const About = () => {
     <div id="about" className='w-full md:h-screen p-2 flex items-center py-16'>
         <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
             <div className='col-span-2'>
-                <p className='uppercase text-xl tracking-widest text-[#7b2424]'>About</p>
+                <p className='uppercase text-xl tracking-widest text-[#0080ff]'>About</p>
                 <h2 className='py-4'>Who I Am</h2>
                 <p className="py-2 text-gray-600">Hello, my name is Mohd Ishaq. I have a Bachelor's degree in Computer Science, but I have to admit that I didn't learn much about programming during my college years. However, I am a self-taught backend developer based in Hyderabad, India.</p>
                 <p className='py-2 text-gray-600'>I have experience working with Python, Javascript and relational databases, and my focus is on developing efficient and scalable applications that meet the needs of my clients and end-users. I take great pride in my ability to quickly learn new technologies and adapt to changing circumstances.</p>
